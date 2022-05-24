@@ -1,0 +1,221 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  seccion  header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 10px;
+    margin: 10px;
+    position:sticky;
+    border: 2px solid grey;
+    }
+
+.header__logo {
+    content: icon;
+    padding: 5px;
+    
+}
+.header__logo a img {
+width: 140px;
+}
+.header__menu {
+    width: 100%;
+    display: inline-block;
+}
+
+.header__menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+@media screen and (max-width:980px) {
+    .header__menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+        
+    }
+     
+.header__menu ul li a {
+    margin: 10px;
+    color: black;
+    justify-content: flex-end;
+    text-decoration: none;
+
+}
+.header__menu ul li a:hover{
+    background-color: lightblue;
+}
+/* primera seccion acerca de mi*/
+
+#cuerpoHome {
+    display: grid;
+    grid-template-areas:
+    "acerca acerca" 
+    "trabajos trabajos"
+    "herramientas herramientas" 
+    "inspiracion inspiracion";
+    padding: 10px;
+    gap:10px;
+}
+@media screen and (min-width: 1024px) {
+    #cuerpoHome{
+        display: grid;
+        grid-template-areas:
+        "acerca acerca" 
+        "trabajos herramientas" 
+        "inspiracion inspiracion";
+        padding: 10px;
+        gap:10px;
+    }
+    
+}
+
+.acercaDeMi{
+    grid-area:acerca;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid grey;
+    width: 100%;
+}
+    .acercaDeMi__titulo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: -80px;
+        background-color: transparent;
+        z-index: 2;
+        }
+    
+    .acercaDeMi__imagen{
+        display: inline;
+        padding: 10px;
+        border: 0px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .acercaDeMi__texto {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 200px;
+        background-color: transparent;
+        z-index: 2;
+        }
+
+/* segunda seccion mis trabajos + herramientas */
+
+.misTrabajos {
+    grid-area: trabajos;
+    align-items: center;
+    width: 100%;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.misHerramientas {
+    grid-area: herramientas;
+    align-items: center;
+    width: 100%;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* tercera seccion  inspiracion */
+
+.inspiracion {
+    grid-area: inspiracion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 2px solid grey;
+    
+}
+
+
+/*  seccion  footer */
+
+.footer {
+    display: flex;
+    border: 2px solid grey;
+
+}
+.footer__parrafo{
+    display: flex;
+width: 40%;
+align-items: center;
+}
+.footer__lista {
+display: flex;
+gap: 50px;
+padding: 15px;
+margin: 10px;
+list-style: none;
+align-items: flex-end;
+
+}
+
+/* pagina acerca de mi */
+
+.cuerpoAcerca {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+    border: 2px grey;
+
+}
+.box__acerca {
+    display: flex;
+    Padding: 10px;
+    margin: 10px;
+    border: 2px solid grey;
+    flex-direction: column;
+}
+.box__acerca img {
+    display: flex;
+    width: fit-content;
+    
+}
+.box__formacion {
+    display: flex;
+    Padding: 10px;
+    margin: 10px;
+    border: 2px solid grey;
+    flex-direction: column;
+}
+.box__cursos {
+    display: flex;
+    Padding: 10px;
+    margin: 10px;
+    border: 2px solid grey;
+    flex-direction: column;
+}
+.box__estudios {
+    display: flex;
+    Padding: 10px;
+    margin: 10px;
+    border: 2px solid grey;
+    flex-direction: column;
+}
