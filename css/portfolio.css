@@ -1,5 +1,4 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,21 +12,32 @@
     grid-template-columns: 1fr 3fr;
     padding: 10px;
     margin: 10px;
-    position:sticky;
+    position: sticky;
     border: 2px solid grey;
-    }
+    width: 99%;
+    background: linear-gradient(to right, grey , white);
+}
 
 .header__logo {
     content: icon;
     padding: 5px;
+
+    
+
+}
+
+.header__logo a img {
+    width: 140px;
     
 }
-.header__logo a img {
-width: 140px;
+.header__logo a img:hover {
+    transform:scale(1.1, 1.1) ;
 }
+
 .header__menu {
     width: 100%;
     display: inline-block;
+    
 }
 
 .header__menu ul {
@@ -36,86 +46,56 @@ width: 140px;
     justify-content: space-evenly;
 
 }
-@media screen and (max-width:980px) {
-    .header__menu ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-}
-        
-    }
-     
-.header__menu ul li a {
-    margin: 10px;
-    color: black;
-    justify-content: flex-end;
-    text-decoration: none;
 
-}
-.header__menu ul li a:hover{
+.header__menu ul li a:hover {
     background-color: lightblue;
 }
+
 /* primera seccion acerca de mi*/
 
 #cuerpoHome {
     display: grid;
     grid-template-areas:
-    "acerca acerca" 
-    "trabajos trabajos"
-    "herramientas herramientas" 
-    "inspiracion inspiracion";
-    padding: 10px;
-    gap:10px;
-}
-@media screen and (min-width: 1024px) {
-    #cuerpoHome{
-        display: grid;
-        grid-template-areas:
-        "acerca acerca" 
-        "trabajos herramientas" 
+        "acerca acerca"
+        "trabajos trabajos"
+        "herramientas herramientas"
         "inspiracion inspiracion";
-        padding: 10px;
-        gap:10px;
-    }
-    
+    padding: 10px;
+    gap: 10px;
 }
 
-.acercaDeMi{
-    grid-area:acerca;
+.acercaDeMi {
+    grid-area: acerca;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     border: 2px solid grey;
-    width: 100%;
 }
-    .acercaDeMi__titulo {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        bottom: -80px;
-        background-color: transparent;
-        z-index: 2;
-        }
-    
-    .acercaDeMi__imagen{
-        display: inline;
-        padding: 10px;
-        border: 0px;
-        margin: 0;
-        overflow: hidden;
-    }
-    .acercaDeMi__texto {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        bottom: 200px;
-        background-color: transparent;
-        z-index: 2;
-        }
+
+.acercaDeMi__titulo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 50%;
+    background-color: transparent;
+}
+
+.acercaDeMi__imagen {
+    display: inline;
+    padding: 10px;
+    border: 0px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.acercaDeMi__texto {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
+    background-color: transparent;
+    z-index: 2;
+}
 
 /* segunda seccion mis trabajos + herramientas */
 
@@ -150,7 +130,7 @@ width: 140px;
     align-items: center;
     width: 100%;
     border: 2px solid grey;
-    
+
 }
 
 
@@ -161,18 +141,20 @@ width: 140px;
     border: 2px solid grey;
 
 }
-.footer__parrafo{
+
+.footer__parrafo {
     display: flex;
-width: 40%;
-align-items: center;
+    width: 40%;
+    align-items: center;
 }
+
 .footer__lista {
-display: flex;
-gap: 50px;
-padding: 15px;
-margin: 10px;
-list-style: none;
-align-items: flex-end;
+    display: flex;
+    gap: 50px;
+    padding: 15px;
+    margin: 10px;
+    list-style: none;
+    align-items: flex-end;
 
 }
 
@@ -186,36 +168,78 @@ align-items: flex-end;
     border: 2px grey;
 
 }
+
 .box__acerca {
     display: flex;
     Padding: 10px;
     margin: 10px;
     border: 2px solid grey;
     flex-direction: column;
+    width: 100%;
 }
+
 .box__acerca img {
     display: flex;
-    width: fit-content;
-    
+    width: 100%;
+
 }
+
 .box__formacion {
     display: flex;
     Padding: 10px;
     margin: 10px;
     border: 2px solid grey;
     flex-direction: column;
+    width: 100%;
+
 }
+
 .box__cursos {
     display: flex;
     Padding: 10px;
     margin: 10px;
     border: 2px solid grey;
     flex-direction: column;
+    width: 100%;
+
 }
+
 .box__estudios {
     display: flex;
     Padding: 10px;
     margin: 10px;
     border: 2px solid grey;
     flex-direction: column;
+    width: 100%;
+
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+    #cuerpoHome {
+        display: grid;
+        grid-template-areas:
+            "acerca acerca"
+            "trabajos herramientas"
+            "inspiracion inspiracion";
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+    .header__menu ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+
 }
