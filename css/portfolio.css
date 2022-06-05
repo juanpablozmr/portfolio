@@ -17,12 +17,16 @@
     width: 99%;
     background: linear-gradient(to right, grey , white);
 }
+.navbar-brand:hover {
+font-weight: bolder;
+}
+.nav-item:hover {
+    font-weight: bolder;
 
+}
 .header__logo {
     content: icon;
     padding: 5px;
-
-    
 
 }
 
