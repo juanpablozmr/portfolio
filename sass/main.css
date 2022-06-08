@@ -1,0 +1,20 @@
+body {
+  font: arial, sans-serif;
+}
+
+body header {
+  font: arial, sans-serif;
+}
+
+body header .navbar-brand {
+  font: Helvetica, sans-serif;
+}
+
+footer {
+  font: Helvetica, sans-serif;
+}
+
+footer ul {
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -15,7 +15,6 @@
     position: sticky;
     border: 2px solid grey;
     width: 99%;
-    background: linear-gradient(to right, grey , white);
 }
 .navbar-brand:hover {
 font-weight: bolder;

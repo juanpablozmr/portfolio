@@ -1,0 +1,33 @@
+@import'var';
+
+body {
+    font: $fontprinpipal;
+
+    header {
+
+        font: $fontprinpipal;
+
+        .navbar-brand {
+            font: $fontsecundaria;
+
+
+
+        }
+
+
+    }
+
+
+
+}
+
+
+footer {
+    font: $fontsecundaria;
+    ul {
+
+        list-style: none;
+    }
+
+    
+}
