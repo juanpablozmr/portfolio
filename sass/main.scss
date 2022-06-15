@@ -1,33 +1,101 @@
-@import'var';
+@import "var";
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap');
 
 body {
-    font: $fontprinpipal;
+    font-family: $principal;
 
     header {
 
-        font: $fontprinpipal;
+        font-family: $principal;
+
 
         .navbar-brand {
-            font: $fontsecundaria;
-
-
+            font-family: $encabezado;
+            font-size: x-large;
 
         }
 
 
     }
 
+    .container {
+        font-family: $principal;
+        font-size: medium;
+
+        @mixin text ($fontsize, $fontstyle, $fweight) {
+            font-size: $fontsize;
+            font-style: $fontstyle;
+            font-weight: $fweight;
+        }
+
+        .parrafo {
+            @include text(medium, italic, normal)
+        }
+
+    }
 
 
 }
 
 
 footer {
-    font: $fontsecundaria;
+
+    .card {
+        font-family: $principal;
+
+        &-footer {
+            font-family: $principal;
+            font-size: medium
+        }
+
+        &-body {
+            font-family: $principal;
+            font-size: small;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        &-title {
+            font-family: $principal;
+            font-size: medium
+        }
+
+
+    }
+
     ul {
 
         list-style: none;
+        font-family: $principal;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 40%;
+
+
     }
 
-    
+
+
+
+}
+
+/* maps */
+
+$red-social: (
+    facebook:#3B5998,
+    linkedin: #0E76A8,
+    instagram: #DD2A7B,
+    pinterest: #C8232C,
+
+);
+
+@each $nombre,
+$valor in $red-social {
+    .fa-#{$nombre} {
+        color: $valor;
+    }
 }

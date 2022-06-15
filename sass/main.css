@@ -1,20 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap");
 body {
-  font: arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body header {
-  font: arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body header .navbar-brand {
-  font: Helvetica, sans-serif;
+  font-family: "Architects Daughter", "cursive";
+  font-size: x-large;
 }
 
-footer {
-  font: Helvetica, sans-serif;
+body .container {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+
+body .container .parrafo {
+  font-size: medium;
+  font-style: italic;
+  font-weight: normal;
+}
+
+footer .card {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .card-footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+
+footer .card-body {
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
 }
 
 footer ul {
   list-style: none;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 40%;
+}
+
+/* maps */
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-linkedin {
+  color: #0E76A8;
+}
+
+.fa-instagram {
+  color: #DD2A7B;
+}
+
+.fa-pinterest {
+  color: #C8232C;
 }
 /*# sourceMappingURL=main.css.map */
