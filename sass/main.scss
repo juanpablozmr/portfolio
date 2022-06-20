@@ -1,0 +1,130 @@
+@import "var";
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap');
+
+
+@mixin text ($fontsize, $fontstyle, $fweight) {
+    font-size: $fontsize;
+    font-style: $fontstyle;
+    font-weight: $fweight;
+}
+
+body {
+    font-family: $principal;
+
+    header {
+
+        font-family: $principal;
+
+
+        .navbar-brand {
+            font-family: $encabezado;
+            font-size: x-large;
+
+        }
+
+
+    }
+
+    .container-fluid {
+        font-family: $principal;
+        font-size: medium;
+
+
+
+        .parrafo {
+            @include text(medium, normal, normal)
+        }
+
+     
+
+    }
+
+
+}
+
+
+footer {
+
+    .card {
+        font-family: $principal;
+
+        &-footer {
+            font-family: $principal;
+            font-size: medium
+        }
+
+        &-body {
+            font-family: $principal;
+            font-size: small;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        &-title {
+            font-family: $principal;
+            font-size: medium
+        }
+
+
+    }
+
+    ul {
+
+        list-style: none;
+        font-family: $principal;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 40%;
+
+
+    }
+
+
+
+
+}
+
+/* maps */
+
+$red-social: (
+    facebook:#3B5998,
+    linkedin: #0E76A8,
+    instagram: #DD2A7B,
+    pinterest: #C8232C,
+
+);
+
+@each $nombre,
+$valor in $red-social {
+    .fa-#{$nombre} {
+        color: $valor;
+    }
+}
+
+
+
+.misTrabajos {
+    font-family: $principal;
+
+    .parrafo {
+        @include text(medium, normal, normal)
+    }
+
+}
+
+.misHerramientas {
+        font-family: $principal;
+    
+     
+    
+}
+.inspiracion {
+    font-family: $principal;
+}
+.contacto {
+    font-family: $principal;
+}

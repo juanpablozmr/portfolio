@@ -15,14 +15,17 @@
     position: sticky;
     border: 2px solid grey;
     width: 99%;
-    background: linear-gradient(to right, grey , white);
 }
+.navbar-brand:hover {
+font-weight: bolder;
+}
+.nav-item:hover {
+    font-weight: bolder;
 
+}
 .header__logo {
     content: icon;
     padding: 5px;
-
-    
 
 }
 
@@ -150,7 +153,7 @@
 
 .footer__lista {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     padding: 15px;
     margin: 10px;
     list-style: none;

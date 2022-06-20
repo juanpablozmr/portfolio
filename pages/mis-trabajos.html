@@ -5,54 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="portfolio y carpeta de trabajo de ilustradora y profesional del dibujo en Argentina">
+    <meta name="keywords" content="ARTE, DIBUJO, ILUSTRACION">
+    <script src="https://kit.fontawesome.com/acf43dc80d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap"
+        rel="stylesheet">
     <title>Mis Trabajos</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><img src="../img/logo-laly.jpeg" alt="logo" width="200"></a>
-        </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./acerca-de-mi.html">Acerca de Mi</a></li>
-                <li><a href="./mis-trabajos.html">Mis trabajos</a></li>
-                <li><a href="./mis-herramientas.html">Mis Herramientas</a></li>
-                <li><a href="./inspiracion.html">Inspiración</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Laly Zamora</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/acerca-de-mi.html">Acerca de
+                                mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/mis-trabajos.html">Mis trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/mis-herramientas.html">Mis herramientas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/inspiracion.html">Inspiracion</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contacto
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Mis redes</a></li>
+                                <li><a class="dropdown-item" href="../pages/contacto.html">Enviar mensaje</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="misTrabajos">
         <article>
-            <h1>Mis Trabajos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eius eaque magnam a, aut id dolor
-                tempore, omnis
-                quos ab tenetur rem officiis nobis adipisci non inventore quaerat repellendus nemo?</p>
-
-
+            <h3>Mis Trabajos</h3>
+            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eius eaque magnam a, aut id dolor tempore, omnis quos ab tenetur rem officiis nobis adipisci non inventore quaerat repellendus nemo?</p>
         </article>
     </main>
 
 
-    <footer class="footer">
-        <div class="footer__parrafo">
-            <p> Buscame en todas mis redes sociales</p>
-        </div>
-        <ul class="footer__lista">
-            <li><a href="https://www.instagram.com"><img src="../img/instagram.jpeg" alt="instagram" width="20"></a>
-            </li>
-            <li><a href="https://facebook.com"><img src="../img/facebook.png" alt="facebook" width="20"></a></li>
-            <li><a href="https://www.linkedin.com"><img src="../img/linkedin.png" alt="linkedin" width="20"></a></li>
-            <li><a href="https://www.pinterest.com"><img src="../img/pinterest.jpeg" alt="instagram" width="30"></a>
-            </li>
-        </ul>
+    <footer id="footer">
+        <div class="card">
+            <div class="card-footer">
+                Laly Zamora © 2022
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Buscame en todas mis redes sociales</h5>
+
+                <ul class="footer__lista">
+                    <li><a href="https://www.instagram.com"><img src="../img/instagram.jpeg" alt="instagram"
+                                width="20"></a>
+                    </li>
+                    <li><a href="https://facebook.com"><img src="../img/facebook.png" alt="facebook" width="20"></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com"><img src="../img/facebook.png" alt="facebook" width="20"></a>
+                    </li>
+                    <li><a href="https://www.pinterest.com"><img src="../img/pinterest.jpeg" alt="pinterest"
+                                width="30"></a>
+                    </li>
+                </ul>
+            </div>
 
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

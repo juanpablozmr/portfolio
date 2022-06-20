@@ -5,109 +5,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="portfolio y carpeta de trabajo de ilustradora y profesional del dibujo en Argentina">
+    <meta name="keywords" content="ARTE, DIBUJO, ILUSTRACION">
+    <script src="https://kit.fontawesome.com/acf43dc80d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap"
+        rel="stylesheet">
     <title>Página Principal</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Laly Zamora</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/acerca-de-mi.html">Acerca de
+                                mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/mis-trabajos.html">Mis trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/mis-herramientas.html">Mis herramientas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/inspiracion.html">Inspiracion</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contacto
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#footer">Mis redes</a></li>
+                                <li><a class="dropdown-item" href="./pages/contacto.html">Enviar mensaje</a></li>
 
-    <header class="header">
-        <div class="header__logo">
-            <a href="index.html"><img src="./img/logo-laly.jpeg" alt="logo" width="200px"></a>
-        </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/acerca-de-mi.html">Acerca de mi</a></li>
-                <li><a href="./pages/mis-trabajos.html">Mis trabajos</a></li>
-                <li><a href="./pages/mis-herramientas.html">Mis Herramientas</a></li>
-                <li><a href="./pages/inspiracion.html">Inspiración</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main id="cuerpoHome">
-        <section class="acercaDeMi">
-            <a href="./pages/acerca-de-mi.html"><img src="./img/dibujo-portada.jpeg" alt="dibujo" width="600px"></a>
+
+
+
+
+
+
+    <main>
+
+
+        <div class="container-fluid ">
+            <div class="row_acerca">
+                <div class="column-md-12 col-lg-12">
+                    <h2>Acerca de mi</h2>
+                    <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, quidem
+                        vel repudiandae tenetur eos fugit, explicabo nesciunt aliquid ipsam harum quae sint nihil quas. Numquammolestiae ipsa dolorem sit voluptate!</p>
+                    <a href="./pages/acerca-de-mi.html"><img src="./img/dibujo-portada-chica.jpeg" alt="dibujo"
+                            width="300px"></a>
+                </div>
             </div>
-
-            <div class="acercaDeMi__titulo">
-                <h1>Acerca de mi</h1>
+            <div class="row">
+                <div class="column-sm-12 col-lg-6 ">
+                    <h3>
+                        <p>Mis Trabajos</p>
+                    </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, quidem vel repudiandae
+                        tenetur eos fugit, explicabo nesciunt aliquid ipsam harum quae sint nihil quas. Numquam
+                        molestiae ipsa dolorem sit voluptate!</p>
+                    <a href="./pages/mis-trabajos.html"><img src="./img/dibujo-mis-trabajos.png" alt="dibujo"
+                            width="300px"></a>
+                </div>
+                <div class="column-sm-12 col-lg-6">
+                    <h3>
+                        <p>Mis Herramientas</p>
+                    </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, quidem vel repudiandae
+                        tenetur eos fugit, explicabo nesciunt aliquid ipsam harum quae sint nihil quas. Numquam
+                        molestiae ipsa dolorem sit voluptate!</p>
+                    <a href="./pages/mis-herramientas.html"><img src="./img/dibujo-mis-herramientas.png" alt="dibujo"
+                            width="300px"></a>
+                </div>
             </div>
-
-            <div class="acercaDeMi__texto">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-                    architecto ipsum dolores sequi
-                    neque laboriosam
-                    beatae in possimus quod quidem. Possimus voluptate vero enim voluptatum totam ad alias sint
-                    excepturi?</p>
+            <div class="row">
+                <div class="column-sm-12 col-lg-12">
+                    <h4>
+                        <p>Inspiracion</p>
+                    </h4>
+                    <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, quidem
+                        vel repudiandae
+                        tenetur eos fugit, explicabo nesciunt aliquid ipsam harum quae sint nihil quas. Numquam
+                        molestiae ipsa dolorem sit voluptate!</p>
+                    <a href="./pages/inspiracion.html"><img src="./img/dibujo-inspiracion.jpeg" alt="dibujo"
+                            width="300px"></a>
+                </div>
             </div>
+        </div>
 
-        </section>
 
-
-        <section class="misTrabajos">
-
-            <div class="misTrabajos__titulo">
-                <h2>Mis Trabajos</h2>
-            </div>
-            <div class="misTrabajos__imagen">
-                <a href="./pages/mis-trabajos.html"><img src="./img/dibujo-mis-trabajos.png" alt="dibujo"
-                        width="500px"></a>
-            </div>
-
-            <div class="misTrabajos__link">
-                <a href="./pages/mis-trabajos.html">Ver Más</a>
-            </div>
-        </section>
-
-        <section class="misHerramientas">
-
-            <div class="misHerramientas__titulo">
-                <h2>Mis Herramientas</h2>
-            </div>
-            <div class="misHerramientas__imagen">
-                <a href="./pages/mis-herramientas.html"><img src="./img/dibujo-mis-herramientas.png" alt="dibujo"
-                        width="500px"></a>
-            </div>
-
-            <div class="misHerramientas__link">
-                <a href="./pages/mis-herramientas.html">Ver Más</a>
-            </div>
-
-        </section>
-
-        <section class="inspiracion">
-
-            <div class="inspiracion__titulo">
-                <h2>Inspiracion</h2>
-            </div>
-            <div class="inspiracion__imagen">
-                <a href="./pages/inspiracion.html"><img src="./img/dibujo-inspiracion.jpeg" alt="dibujo"
-                        width="500px"></a>
-            </div>
-            <div class="inspiracion__link">
-                <a href="./pages/inspiracion.html">Ver Más</a>
-            </div>
-        </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__parrafo">
-            <p> Buscame en todas mis redes sociales</p>
-        </div>
-        <ul class="footer__lista">
-            <li><a href="https://www.instagram.com"><img src="./img/instagram.jpeg" alt="instagram" width="20"></a>
-            </li>
-            <li><a href="https://facebook.com"><img src="./img/facebook.png" alt="facebook" width="20"></a></li>
-            <li><a href="https://www.linkedin.com"><img src="./img/linkedin.png" alt="linkedin" width="20"></a></li>
-            <li><a href="https://www.pinterest.com"><img src="./img/pinterest.jpeg" alt="instagram" width="30"></a>
-            </li>
-        </ul>
+    <footer id="footer">
+        <div class="card">
+            <div class="card-footer">
+                Laly Zamora © 2022
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Buscame en todas mis redes sociales</h5>
+                <ul class="footer__lista">
+                    <li><a href="https://www.instagram.com">
+                            <i class="fa-brands fa-instagram fa-xl" alt="instagram"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://facebook.com">
+                            <i class="fa-brands fa-facebook fa-xl" alt="facebook"></i>
+                        </a></li>
+                    <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-xl" alt="linkedin"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest fa-xl" alt="pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
