@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap');
 
+
+@mixin text ($fontsize, $fontstyle, $fweight) {
+    font-size: $fontsize;
+    font-style: $fontstyle;
+    font-weight: $fweight;
+}
+
 body {
     font-family: $principal;
 
@@ -19,19 +26,17 @@ body {
 
     }
 
-    .container {
+    .container-fluid {
         font-family: $principal;
         font-size: medium;
 
-        @mixin text ($fontsize, $fontstyle, $fweight) {
-            font-size: $fontsize;
-            font-style: $fontstyle;
-            font-weight: $fweight;
-        }
+
 
         .parrafo {
-            @include text(medium, italic, normal)
+            @include text(medium, normal, normal)
         }
+
+     
 
     }
 
@@ -98,4 +103,28 @@ $valor in $red-social {
     .fa-#{$nombre} {
         color: $valor;
     }
+}
+
+
+
+.misTrabajos {
+    font-family: $principal;
+
+    .parrafo {
+        @include text(medium, normal, normal)
+    }
+
+}
+
+.misHerramientas {
+        font-family: $principal;
+    
+     
+    
+}
+.inspiracion {
+    font-family: $principal;
+}
+.contacto {
+    font-family: $principal;
 }

@@ -13,14 +13,14 @@ body header .navbar-brand {
   font-size: x-large;
 }
 
-body .container {
+body .container-fluid {
   font-family: "Montserrat", sans-serif;
   font-size: medium;
 }
 
-body .container .parrafo {
+body .container-fluid .parrafo {
   font-size: medium;
-  font-style: italic;
+  font-style: normal;
   font-weight: normal;
 }
 
@@ -69,5 +69,27 @@ footer ul {
 
 .fa-pinterest {
   color: #C8232C;
+}
+
+.misTrabajos {
+  font-family: "Montserrat", sans-serif;
+}
+
+.misTrabajos .parrafo {
+  font-size: medium;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.misHerramientas {
+  font-family: "Montserrat", sans-serif;
+}
+
+.inspiracion {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contacto {
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
