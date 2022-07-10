@@ -22,81 +22,112 @@ body {
             font-size: x-large;
 
         }
-
-
     }
 
-    .container-fluid {
+
+
+
+    .column-md-12.col-lg-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         font-family: $principal;
-        font-size: medium;
-
-
-
-        .parrafo {
-            @include text(medium, normal, normal)
-        }
-
-     
-
-    }
-
-
-}
-
-
-footer {
-
-    .card {
-        font-family: $principal;
-
-        &-footer {
-            font-family: $principal;
-            font-size: medium
-        }
-
-        &-body {
-            font-family: $principal;
-            font-size: small;
-            display: flex;
-            justify-content: space-between;
-
-
-        }
-
-        &-title {
-            font-family: $principal;
-            font-size: medium
-        }
+        background-image: url(../img/lluvia-portada.jpg);
+        height: 500px;
 
 
     }
 
-    ul {
 
-        list-style: none;
+    .column-sm-12.col-lg-6 {
         font-family: $principal;
         display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        width: 40%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: gainsboro;
+        height: 300px;
+        
+
+    }
+
+    .inspiracion_home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: $principal;
+        background-image: url(../img/Espacio-portada.jpg);
+        height: 400px;
+
+    }
+.row.gap-1 {
+    font-family: $principal;
+}
+
+.row.gap-2 {
+    font-family: $principal;
+    
+}
+
+    .parrafo {
+        @include text(medium, normal, normal)
+    }
+
+    footer {
+
+        .card {
+            font-family: $principal;
+
+            &-footer {
+                font-family: $principal;
+                font-size: medium
+            }
+
+            &-body {
+                font-family: $principal;
+                font-size: small;
+                display: flex;
+                justify-content: space-between;
+
+
+            }
+
+            &-title {
+                font-family: $principal;
+                font-size: medium
+            }
+
+
+        }
+
+        ul {
+
+            list-style: none;
+            font-family: $principal;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 40%;
+
+
+        }
+
+
 
 
     }
 
+    /* maps */
 
+    $red-social: (
+        facebook:#3B5998,
+        linkedin: #0E76A8,
+        instagram: #DD2A7B,
+        pinterest: #C8232C,
 
-
-}
-
-/* maps */
-
-$red-social: (
-    facebook:#3B5998,
-    linkedin: #0E76A8,
-    instagram: #DD2A7B,
-    pinterest: #C8232C,
-
-);
+    );
 
 @each $nombre,
 $valor in $red-social {
@@ -117,14 +148,17 @@ $valor in $red-social {
 }
 
 .misHerramientas {
-        font-family: $principal;
-    
-     
-    
+    font-family: $principal;
+
+
+
 }
+
 .inspiracion {
     font-family: $principal;
 }
+
 .contacto {
     font-family: $principal;
+}
 }

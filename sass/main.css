@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
+  /* maps */
 }
 
 body header {
@@ -13,39 +14,72 @@ body header .navbar-brand {
   font-size: x-large;
 }
 
-body .container-fluid {
+body .column-md-12.col-lg-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   font-family: "Montserrat", sans-serif;
-  font-size: medium;
+  background-image: url(../img/lluvia-portada.jpg);
+  height: 500px;
 }
 
-body .container-fluid .parrafo {
+body .column-sm-12.col-lg-6 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: gainsboro;
+  height: 300px;
+}
+
+body .inspiracion_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/Espacio-portada.jpg);
+  height: 400px;
+}
+
+body .row.gap-1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body .row.gap-2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body .parrafo {
   font-size: medium;
   font-style: normal;
   font-weight: normal;
 }
 
-footer .card {
+body footer .card {
   font-family: "Montserrat", sans-serif;
 }
 
-footer .card-footer {
+body footer .card-footer {
   font-family: "Montserrat", sans-serif;
   font-size: medium;
 }
 
-footer .card-body {
+body footer .card-body {
   font-family: "Montserrat", sans-serif;
   font-size: small;
   display: flex;
   justify-content: space-between;
 }
 
-footer .card-title {
+body footer .card-title {
   font-family: "Montserrat", sans-serif;
   font-size: medium;
 }
 
-footer ul {
+body footer ul {
   list-style: none;
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -54,42 +88,41 @@ footer ul {
   width: 40%;
 }
 
-/* maps */
-.fa-facebook {
+body .fa-facebook {
   color: #3B5998;
 }
 
-.fa-linkedin {
+body .fa-linkedin {
   color: #0E76A8;
 }
 
-.fa-instagram {
+body .fa-instagram {
   color: #DD2A7B;
 }
 
-.fa-pinterest {
+body .fa-pinterest {
   color: #C8232C;
 }
 
-.misTrabajos {
+body .misTrabajos {
   font-family: "Montserrat", sans-serif;
 }
 
-.misTrabajos .parrafo {
+body .misTrabajos .parrafo {
   font-size: medium;
   font-style: normal;
   font-weight: normal;
 }
 
-.misHerramientas {
+body .misHerramientas {
   font-family: "Montserrat", sans-serif;
 }
 
-.inspiracion {
+body .inspiracion {
   font-family: "Montserrat", sans-serif;
 }
 
-.contacto {
+body .contacto {
   font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
